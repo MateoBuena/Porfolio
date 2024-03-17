@@ -1,0 +1,416 @@
+/* clases generales */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "M PLUS Code Latin", monospace;
+    box-sizing: border-box;
+    background: none;
+    color: #fff;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(to bottom, #000, #000);
+    scroll-behavior: smooth;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-top: 5px;
+}
+
+.subrayado {
+    text-decoration: underline;
+}
+
+.texto-verde {
+    color: #0f0;
+}
+
+.texto-naranja {
+    color: #f70;
+}
+
+.texto-azul {
+    color: #44f;
+}
+
+.texto-amarillo {
+    color: #ff0;
+}
+
+.subtitulo {
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.div_subtitulo {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.div_subtitulo img {
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+    margin: auto 0;
+}
+
+/* barra de navegacion */
+
+.menu_desplegable {
+    width: 50px;
+    height: 50px;
+    margin: 15px 0 5px 20px;
+    background: none;
+    border: 2px #000 solid;
+    border-radius: 10px;
+}
+
+.menu_desplegable:hover {
+    border-color: #fff;
+    border-radius: 10px;
+    transition: border .5s;
+}
+
+.img_menu_desplegable {
+    width: 100%;
+    filter: invert(1);
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+
+.menu_flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ul {
+    display: flex;
+    list-style: none;
+    text-align: center;
+}
+
+.ul_li {
+    font-size: 25px;
+    transition: transform .5s;
+}
+
+.ul_li:hover {
+    transform: scale(1.1);
+    transition: transform .5s;
+}
+
+.ul_li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.visible {
+    display: flex;
+}
+
+.invisible {
+    display: none;
+}
+
+/* seccion principal */
+
+.img_perfil {
+    margin: 20px 0;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.sobre_mi {
+    margin-top: 10px;
+}
+
+/* .contenedor_cv {
+    width: 100%;
+    display: flex;
+}
+
+.boton_cv {
+    margin-top: 1rem;
+    padding: .5rem;
+    border: 2px #f00 solid;
+    border-radius: 100vmax;
+}
+
+.boton_cv:hover{
+    box-shadow: 0 0 5px 0 #f66;
+} */
+
+/* seccion redes */
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin-top: 10rem;
+}
+
+
+.h2_redes {
+    text-align: center;
+}
+
+
+.botones_redes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.boton_redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: 2px solid;
+    border-color: #66f rgb(111, 2, 195) rgb(75, 0, 98);
+    border-radius: 10px;
+    margin: 5px;
+    flex: 1;
+}
+
+.boton_redes:hover {
+    box-shadow: 0 0 7px 0 #66f;
+}
+
+.boton_redes a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding-right: 10px;
+}
+
+.boton_redes a img {
+    width: 30px;
+}
+
+/* seccion proyecto */
+
+.div_titulo_proyecto {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div_titulo_proyecto a {
+    margin-left: 1rem;
+    text-decoration: none;
+    border: 1px #fff solid;
+    border-radius: 100vmax;
+    padding: 1px 5px;
+}
+
+.contenedor_proyecto {
+    margin: 1rem 0;
+    width: 100%;
+}
+
+.contenedor_proyecto img {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+/* seccion habilidades */
+
+.contenedor_habilidades {
+    margin-top: 1rem;
+}
+
+.contenedor_ul {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.habilidades {
+    font-size: 15px;
+    margin: .5rem;
+    padding: 5px 10px;
+    list-style: none;
+    border: 2px rgb(255, 145, 0) solid;
+    border-radius: 100vmax;
+}
+
+@media screen and (min-width: 990px) {
+
+    /* generales */
+
+    section {
+        margin: 15rem 0;
+    }
+
+    /* barra de navegacion */
+
+    .menu_desplegable {
+        display: none;
+    }
+
+    .menu_flex {
+        position: fixed;
+        top: 20px;
+        left: 10%;
+        right: 10%;
+        /* background: #000; */
+    }
+
+    .ul {
+        border-radius: 100vmax;
+        box-shadow: 0 0 5px 3px #aaa;
+        padding-left: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin: 5px 20px;
+    }
+
+    .ul_li {
+        margin-inline: 20px;
+        font-size: 35px;
+        transition: transform .5s;
+    }
+
+    .invisible {
+        display: flex;
+    }
+
+    .visible {
+        display: flex;
+    }
+
+    /* seccion principal */
+
+    .principal {
+        margin-top: 10rem;
+    }
+
+    .img_perfil {
+        min-width: 500px;
+        min-height: 500px;
+    }
+
+    #nombre {
+        font-size: 5rem;
+        margin-bottom: 2rem;
+    }
+
+    .sobre_mi {
+        margin: 10rem 0;
+        font-size: 2.5rem;
+    }
+    
+    /* .boton_cv {
+        font-size: 2.5rem;
+        padding: .5rem;
+        border-width: 4px;
+    }
+
+    .boton_cv:hover{
+        box-shadow: 0 0 1rem 0 #f66;
+    } */
+
+    /* seccion redes */
+
+    .div_subtitulo {
+        margin-top: 0;
+    }
+
+    .subtitulo {
+        font-size: 3.5rem;
+    }
+
+    .div_subtitulo img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .boton_redes {
+        margin-inline: .5rem;
+        border: 4px solid;
+        border-color: #66f rgb(111, 2, 195) rgb(75, 0, 98);
+        flex: 0;
+    }
+
+    .boton_redes a {
+        font-size: 1.5rem;
+        padding-right: 10px;
+    }
+
+    .boton_redes a img {
+        width: 60px;
+    }
+
+    /* seccion proyectos */
+
+    .div_titulo_proyecto {
+        font-size: 2.5rem;
+    }
+
+    .div_titulo_proyecto a {
+        border-width: 2px;
+    }
+
+    .contenedor_proyecto {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedor_proyecto a {
+        font-size: 2.5rem;
+    }
+
+    /* seccion habilidades */
+
+    .habilidades {
+        margin: 1rem;
+        border-width: 5px;
+        padding: 1rem 2rem;
+        font-size: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 990px) {
+
+    .ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .invisible {
+        display: none;
+    }
+
+    .visible {
+        display: flex;
+    }
+
+    #nombre {
+        font-size: 2.28rem;
+        text-align: center;
+    }
+}
